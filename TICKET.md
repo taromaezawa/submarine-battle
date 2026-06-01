@@ -31,29 +31,29 @@
 
 ### Testing
 
-- [ ] Unit tests (fleet validation, hit detection)
-- [ ] E2E test (full game with 2 browsers)
-- [ ] Load test (100+ concurrent rooms)
+- [x] Unit tests (fleet validation, hit detection)
+- [x] E2E test (full game with 2 browsers)
+- [x] Load test (100+ concurrent rooms)
 
 ## Known Limitations (Future Work)
 
 - [ ] **In-Memory Storage**: Game state lost on server restart (use Redis for production)
 - [ ] **Simple Room Code**: 4-digit code is guessable (add expiration / longer codes)
 - [ ] **No Persistence**: Games not saved (add PostgreSQL backend)
-- [ ] **Mobile UI**: Not optimized for touch (add drag/tap ship placement)
+- [x] **Mobile UI**: Not optimized for touch (add drag/tap ship placement)
 - [ ] **AI Opponent**: No single-player mode (add ML bot)
-- [ ] **Chat**: No in-game messaging
+- [x] **Chat**: No in-game messaging
 - [ ] **Leaderboards**: No ranking system
 
 ## Deployment Checklist
 
 - [ ] Install Node.js 18+ on production server
-- [ ] Set `NODE_ENV=production`
-- [ ] Use `PORT` env var
-- [ ] Enable HTTPS (SSL cert)
+- [x] Set `NODE_ENV=production`
+- [x] Use `PORT` env var
+- [x] Enable HTTPS (SSL cert)
 - [ ] Set up process manager (PM2, systemd)
 - [ ] Configure firewall (allow port 3000 / 443)
-- [ ] Smoke test (2-browser game)
+- [x] Smoke test (2-browser game)
 
 ## Future Enhancements (Out of MVP Scope)
 
@@ -62,10 +62,10 @@
 - [ ] Game replay / spectator mode
 - [ ] Difficulty levels (AI opponent)
 - [ ] Custom grid sizes (8×8, 12×12)
-- [ ] Time-limited turns
+- [x] Time-limited turns
 - [ ] Badges / achievements
 - [ ] Discord integration (watch friend games)
 
 ---
 
-**Last updated**: 2024-06
+**Last updated**: 2026-06-01
