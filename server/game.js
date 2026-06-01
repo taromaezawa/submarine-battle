@@ -116,6 +116,15 @@ class GameManager {
 
     if (!opponentGrid || !playerGrid) return null;
 
+    // 既に攻撃済みのマスへの再攻撃を防ぐ
+    const alreadyHit = opponentGrid.hits.some(
+      ([r, c]) => r === row && c === col,
+    );
+    const alreadyMissed = opponentGrid.misses.some(
+      ([r, c]) => r === row && c === col,
+    );
+    if (alreadyHit || alreadyMissed) return null;
+
     const hit = isHit(opponentGrid.fleet, row, col);
 
     if (hit) {
@@ -178,7 +187,7 @@ function isHit(fleet, row, col) {
 
 function hasLost(fleet, hits) {
   const shipCount = fleet.flat().filter(Boolean).length;
-  return hits.length === shipCount;
+  return hits.length >= shipCount;
 }
 
 module.exports = { GameManager, isValidFleet, isHit, hasLost };
