@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1280" height="800" fill="#f5f5f5"/>
+  
+  <!-- Title bar -->
+  <rect width="1280" height="60" fill="#003366"/>
+  <text x="640" y="40" font-size="24" font-weight="bold" fill="white" text-anchor="middle">⚓ submarine-battle</text>
+  
+  <!-- Content -->
+  <g id="content">
+    
+  <rect x="320" y="200" width="640" height="400" fill="white" stroke="#999" stroke-width="2"/>
+  <text x="640" y="280" font-size="28" font-weight="bold" text-anchor="middle">Join a Game</text>
+  
+  <rect x="360" y="340" width="560" height="50" fill="white" stroke="#333" stroke-width="2" rx="4"/>
+  <text x="380" y="370" font-size="16" fill="#666">4-digit room code</text>
+  
+  <rect x="360" y="420" width="560" height="50" fill="white" stroke="#333" stroke-width="2" rx="4"/>
+  <text x="380" y="450" font-size="16" fill="#666">Your name</text>
+  
+  <rect x="460" y="500" width="360" height="50" fill="#003366" stroke="#003366" stroke-width="2" rx="4"/>
+  <text x="640" y="532" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Join Game</text>
+
+  </g>
+</svg>
