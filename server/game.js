@@ -166,8 +166,8 @@ function isValidFleet(grid) {
     }
   }
   return (
-    shipCounts.submarine === 1 &&
-    shipCounts.destroyer === 1 &&
+    shipCounts.submarine === 3 &&
+    shipCounts.destroyer === 2 &&
     shipCounts.cruiser === 1
   );
 }
